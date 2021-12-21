@@ -4,7 +4,7 @@
 ```
 nav>ul>li
 ```
-**Result: 
+Result: 
 
 ```
 <nav>
@@ -18,7 +18,7 @@ nav>ul>li
 ```
 div+p+bq
 ```
-**Result: 
+Result: 
 ```
 <div></div>
 <p></p>
