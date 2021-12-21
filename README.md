@@ -1,10 +1,10 @@
-# Shortcut-in-Visual-Studio-Code-for-HTML
+# Shortcut-in-Visual-Studio-Code
 ## Syntax
 ### Child: >
 ```
 nav>ul>li
 ```
-Result: 
+**Result: 
 
 ```
 <nav>
@@ -18,7 +18,7 @@ Result:
 ```
 div+p+bq
 ```
-Result: 
+**Result: 
 ```
 <div></div>
 <p></p>
@@ -26,6 +26,7 @@ Result:
 
 ```
 ### Climb-up: ^
+### 1.
 ```
 div+div>p>span+em^bq
 ```
@@ -37,7 +38,7 @@ Result:
     <blockquote></blockquote>
 </div>
 ```
-
+### 2.
 ```
 div+div>p>span+em^^bq
 ```
@@ -50,10 +51,11 @@ Result:
 <blockquote></blockquote>
 ```
 ### Grouping: ()
+### 1.
 ``` 
 div>(header>ul>li*2>a)+footer>p
 ```
-Result: 
+**Result: 
 ```
 <div>
     <header>
@@ -67,11 +69,11 @@ Result:
     </footer>
 </div>
 ```
-
+### 2. 
 ```
 (div>dl>(dt+dd)*3)+footer>p
 ```
-Result:
+**Result:
 ```
 <div>
     <dl>
@@ -104,6 +106,7 @@ Result:
 ```
 
 ### Item numbering: $
+### 1.
 ```
 ul>li.item$*5
 ```
@@ -117,7 +120,7 @@ Result:
     <li class="item5"></li>
 </ul>
 ```
-
+### 2.
 ```
 h$[title=item$]{Header $}*3
 ```
@@ -127,7 +130,7 @@ Result:
 <h2 title="item2">Header 2</h2>
 <h3 title="item3">Header 3</h3>
 ```
-
+### 3.
 ```
 ul>li.item$$$*5
 ```
@@ -141,7 +144,7 @@ Result:
     <li class="item005"></li>
 </ul>
 ```
-
+### 4.
 ```
 ul>li.item$@-*5
 ```
@@ -155,7 +158,7 @@ Result:
     <li class="item1"></li>
 </ul>
 ```
-
+### 5. 
 ```
 ul>li.item$@3*5
 ```
@@ -171,6 +174,7 @@ Result:
 ```
 
 ### ID and CLASS attributes
+### 1.
 ```
 #header
 ```
@@ -178,7 +182,7 @@ Result:
 ```
 <div id="header"></div>
 ```
-
+### 2.
 ```
 .title
 ```
@@ -186,7 +190,7 @@ Result:
 ```
 <div class="title"></div>
 ```
-
+### 3. 
 ```
 form#search.wide
 ```
@@ -194,7 +198,7 @@ Result:
 ```
 <form id="search" class="wide"></form>
 ```
-
+### 4.
 ```
 p.class1.class2.class3
 ```
@@ -205,6 +209,7 @@ Result:
 ```
 
 ### Custom attributes
+### 1.
 ```
 p[title="Hello world"]
 ```
@@ -213,7 +218,7 @@ Result:
 ```
 <p title="Hello world"></p>
 ```
-
+### 2. 
 ```
 td[rowspan=2 colspan=3 title]
 ```
@@ -222,7 +227,7 @@ Result:
 ```
 <td rowspan="2" colspan="3" title=""></td>
 ```
-
+### 3. 
 ```
 [a='value1' b="value2"]
 ```
@@ -233,6 +238,7 @@ Result:
 ```
 
 ### Text: {}
+### 1.
 ```
 a{Click me}
 ```
@@ -240,7 +246,7 @@ Result:
 ```
 <a href="">Click me</a>
 ```
-
+### 2.
 ```
 p>{Click }+a{here}+{ to continue}
 ```
@@ -250,6 +256,7 @@ Result:
 ```
 
 ### Implicit tag names
+### 1.
 ```
 .class
 ```
@@ -257,7 +264,7 @@ Result:
 ```
 <div class="class"></div>
 ```
-
+### 2.
 ```
 em>.class
 ```
@@ -265,7 +272,7 @@ Result:
 ```
 <em><span class="class"></span></em>
 ```
-
+### 3.
 ```
 ul>.class
 ```
@@ -275,7 +282,7 @@ Result:
     <li class="class"></li>
 </ul>
 ```
-
+### 4.
 ```
 table>.row>.col
 ```
